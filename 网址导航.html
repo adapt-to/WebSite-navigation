@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网址导航</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <style type="text/css">     
+    .left {     
+      float:left;     
+      display:inline;     
+      width:280px;  
+      margin:20px 40px;    
+      border-style:outset;
+      border-radius:8px;  
+      height:100px;
+
+    }     
+    .center{     
+      float:left;     
+      display:inline;     
+      width:280px;
+      margin:20px 40px;
+      border-style:outset; 
+      border-radius:8px; 
+      background:#c0f8ff; 
+      height:100px;
+    }     
+    .right{     
+      float:left;     
+      display:inline;     
+      width:280px;
+      margin:20px 40px;
+      border-style:outset; 
+      border-radius:8px; 
+      background:pink; 
+      height:100px;
+    }
+    #wo{
+      border-radius:10px;
+      background-image:url(http://img.51miz.com/Element/00/58/60/87/a320c0ad_E586087_7f32ae77.jpg!/quality/90/unsharp/true/compress/true/format/jpg); 
+      display:flex;
+      flex-direction:column;
+      padding:0;
+      margin:40px;
+      font-size:18px;
+      text-align:center;
+    }
+    #footer {
+      border-radius:9px;
+      height: 40px;
+      line-height: 40px;
+      position: fixed;
+      bottom: 0;
+      width: 90%;
+      text-align: center;
+      background: lightblue;
+      
+      font-family: Arial;
+      font-size: 12px;
+      letter-spacing:1px;
+    }
+  </style> 
+
+
+  <body style="
+               background-image:url(http://pic1.win4000.com/wallpaper/2017-11-17/5a0e768fb8f0a.jpg);
+               background-size: cover;
+               font-family: 'Open Sans',
+               sans-serif;padding: 5px 25px;
+               font-size: 18px;
+               margin: 0; 
+               width:100%;
+               height:100%">
+    <div  id="wo">
+
+      <h1 style="  font-family: 'Merriweather', serif;font-size: 30px;">
+        <img style="weight:45px;height:45px;"src="http://bpic.588ku.com/element_origin_min_pic/01/12/94/9356f778925a299.jpg"/>华师导航</h1>
+      <p>  
+      </p>
+	</div>
+   <a style="color:blue;margin: 10px 10px 20px 40px;">功能说明:</a>
+				<a style="background-color:bisque; text-align:center; width:45px; height:30px; text-align:center; border-radius:6px;" href="javascript:divShow();" id="btnhref" class="btn-slide"><b>查看</b></a>
+		  
+    
+	<div style="width:1000px; font-size:20px; background-color:#E4C392; margin:0px auto;border-radius: 10px;" id="show">
+		<div id="btnshow" style="display: none;">
+			<p style="font-size:16px;">
+				<font color="LightCoral ">页面说明：</font><br>
+				1. 此处为<font color="red">常用网址</font>页面;<br>
+				2. 需要提交网址的同学可<font color="red">与我联系</font>;<br>
+			</p>
+		</div>
+	</div>
+
+    <div style="width:100%;height:100%">
+      <div class="left" style="
+	  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535813543280&di=dc7a927dfbeed8cf3bc93ceda86bb1c0&imgtype=0&src=http%3A%2F%2Fupload.iheima.com%2F2016%2F0224%2F1456275031112.jpg);
+	  background-size: 100% 100%;"
+	  title="谷歌搜索">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(0)">谷歌搜索</button>
+        </div>
+      </div>
+
+      <div class="left" style="
+	  background-image:url(http://img.zcool.cn/community/011a5357b64c620000018c1b9e7e67.png@1280w_1l_2o_100sh.png);
+	  background-size: 100% 100%;"
+	  title="百度一下">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(1)">百度一下</button>
+        </div>
+      </div>
+      
+	  <div class="left" style="
+	  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535814315459&di=1571d103138d025d1d90b2ec43f5ba69&imgtype=0&src=http%3A%2F%2Fwww.teanma.com%2FUploadFiles%2FFCK%2F2014-09%2F6354749597798437505454171.jpg);
+	  background-size: 100% 100%;"
+	  title="华南师范大学官网">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(2)">华师官网</button>
+        </div>
+      </div>
+	  
+	  <div class="left" style="
+	  background-image:url(http://statics.scnu.edu.cn/statics/images/lib/logo.png);
+	  background-size: 100% 100%;"
+	  title="华南师范大学图书馆">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(3)">华师图书馆</button>
+        </div>
+      </div>
+
+	  <div class="left" style="
+	  background-image:url(http://statics.scnu.edu.cn/statics/css/scnuportal/contentlogo.png);
+	  background-size: 100% 100%;"
+	  title="华南师范大学统一认证平台">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(4)">统一认证平台</button>
+        </div>
+      </div>
+
+	  <div class="left" style="
+	  background-image:url(http://statics.scnu.edu.cn/statics/images/yjsy/logo.gif);
+	  background-size: 100% 100%;"
+	  title="查成绩的！">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(5)">华师研究生处</button>
+        </div>
+      </div>
+	  
+   	  <div class="left" style="
+	  background-image:url(http://mail.scnu.edu.cn/customer/images/LOGO.PNG);
+	  background-size: 100% 100%;"
+	  title="华南师范大学学生邮箱">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(6)">华师学生邮箱</button>
+        </div>
+      </div>   
+
+   	  <div class="left" style="
+	  background-image:url(http://www.linuxdiyf.com/linux/uploads/allimg/160616/2-1606161015424P.jpg);
+	  background-size: 100% 100%;"
+	  title="Python">
+        <div style="float:center; margin:10px;">
+          <button style="cursor:pointer;color:white;background:green;border-radius:8px;weight:10px;height:30px;" id="confire" type="button" onclick="tz(7)">Python官网</button>
+        </div>
+      </div> 
+
+    <div id="footer">©2018 <a href="http://www.myheyufei.com" >adaptの小站</a>/Theme by <a href="http://www.myheyufei.com" target="_blank">heyufei</a> </div>
+  </body>
+  <script type="text/javascript">
+	function divShow(){
+		document.getElementById("btnshow").style.display="block";
+		document.getElementById("btnhref").innerHTML ="隐藏";
+		document.getElementById("btnhref").href ="javascript:divhidden()";
+		}
+	function divhidden(){
+		document.getElementById("btnshow").style.display="none";
+		document.getElementById("btnhref").innerHTML ="查看";
+		document.getElementById("btnhref").href ="javascript:divShow()"; 
+		}
+		
+	function tz(a)
+	{
+		switch (a)
+			  {
+			  case 0:
+				window.location.href='http://www.google.cn/';
+				break;
+			  case 1:
+				window.location.href='https://www.baidu.com/';
+				break;
+			  case 2:
+				window.location.href='http://www.scnu.edu.cn/';
+				break;
+			  case 3:
+				window.location.href='http://lib.scnu.edu.cn/';
+				break;
+			  case 4:
+				window.location.href='https://sso.scnu.edu.cn/AccountService/user/login.html';
+				break;
+			  case 5:
+				window.location.href='http://yjsy.scnu.edu.cn/';
+				break;
+			  case 6:
+				window.location.href='http://mail.scnu.edu.cn/';
+				break;
+			  case 7:
+				window.location.href='https://www.python.org/';
+				break;
+			  }
+   }
+	</script>
+</html>
